@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Registration Form</title>
+    <link rel="stylesheet" href="react.css">
+</head>
+<body class="body3">
+
+    <h1 style="color: blue;">Complete the Registration Form</h1>
+    <div class="reg1">
+    <form action="" class="reg">
+        
+        <!-- Name Fields -->
+        <label for="firstname"><b>First Name:</b></label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required><br><br>
+        
+        <label for="lastname"><b>Last Name:</b></label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required><br><br>
+        
+        <!-- Email -->
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+        
+        <!-- Country Selection -->
+        <label for="country"><b>Country:</b></label><br>
+        <select name="country" id="country" required>
+            <option value="Kenya" selected>Kenya</option>
+            <option value="USA">USA</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Sudan">Sudan</option>
+            <option value="India">India</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Ethiopia">Ethiopia</option>
+        </select><br><br>
+        
+        <!-- Mobile Number -->
+        <label for="mobile"><b>Mobile Contact:</b></label><br>
+        <input type="tel" id="mobile" name="mobile" placeholder="e.g., +254712345678" pattern="^\+?[0-9]{10,15}$" required><br><br>
+        
+        <!-- Age -->
+        <label for="age"><b>Age:</b></label><br>
+        <input type="number" id="age" name="age" min="18" max="50" required><br><br>
+        
+        <!-- Favorite Dish -->
+        <fieldset>
+            <legend><b>What is your favorite dish?</b></legend>
+            <input type="checkbox" id="chips_chicken" name="dish" value="Chips and chicken">
+            <label for="chips_chicken">Chips and chicken</label><br>
+            
+            <input type="checkbox" id="ugali_chicken" name="dish" value="Ugali and chicken">
+            <label for="ugali_chicken">Ugali and chicken</label><br>
+            
+            <input type="checkbox" id="chips_sausage" name="dish" value="Chips and sausage">
+            <label for="chips_sausage">Chips and sausage</label><br>
+            
+            <input type="checkbox" id="ugali_fish" name="dish" value="Ugali and fish">
+            <label for="ugali_fish">Ugali and fish</label><br>
+            
+            <input type="checkbox" id="toast_egg" name="dish" value="Toast egg">
+            <label for="toast_egg">Toast egg</label><br>
+            
+            <input type="checkbox" id="indomie" name="dish" value="Indomie">
+            <label for="indomie">Indomie</label>
+        </fieldset><br>
+        
+        <!-- Gender Selection -->
+        <fieldset>
+            <legend><b>What is your gender?</b></legend>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </fieldset><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        
+    </form>
+</div>
+</body>
+</html>
